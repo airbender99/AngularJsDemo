@@ -1,0 +1,22 @@
+<html ng-app="customersApp">
+    <head>
+        <link href="app/css/style.css" rel="stylesheet" >
+    </head>
+    <!--<body ng-controller="customersController">-->
+    <!--<body ng-controller="customersController as ctrl">-->
+    <body>
+        
+        <div ng-view></div>
+        <script src="Scripts/angular.min.js"></script>
+        <script src="Scripts/angular-route.min.js"></script>
+        <!--Module-->
+        <script src="app/app.js"></script>
+        <!--Services-->
+        <script src="app/services/customersFactory.js"></script>
+        <!--controllers-->
+        <script src="app/controllers/CustomersController.js"></script>
+        <script src="app/controllers/OrdersController.js"></script>
+        <!--<script src="app/controllers/CustomersControllerAs.js"></script>-->
+        
+    </body>
+</html>
