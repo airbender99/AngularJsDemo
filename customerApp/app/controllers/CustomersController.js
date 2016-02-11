@@ -3,8 +3,6 @@
 (function () {
     var customersController = function ($scope, customersFactory) {
         
-        
-        
         $scope.sortBy = 'name';//default sort;
         $scope.reverse = false;
         $scope.customers = [];
@@ -14,7 +12,14 @@
         };
         
         function init(){
-            $scope.customers = customersFactory.getCustomers();
+            //$scope.customers = customersFactory.getCustomers();
+            customersFactory.getCustomers()
+            .success(function(customers){
+                $scope.customers = customers;
+            })
+            .error(function(data,status,headers,config){
+                //Handle the error;
+            })
         }
     
         init();
