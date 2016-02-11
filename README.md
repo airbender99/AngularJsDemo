@@ -12,3 +12,5 @@ cmd>node server.js
 browser> localhost:8080/customers
 
 Note: While running application(Node js service branch) use http://localhost:8080/Index.html#
+
+Try using $resource of angularJs instead of $http
